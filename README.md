@@ -1,4 +1,4 @@
-# iclr_simulator: Multi-Resolution RF Signal Simulator
+# ICML_simulator: Multi-Resolution RF Signal Simulator
 
 ## Overview
 
@@ -22,8 +22,8 @@ Example scripts in `examples/` illustrate two typical use cases:
 1. Clone the repository:
 
    ```bash
-   git clone <your-repo-url> iclr_simulator
-   cd iclr_simulator
+   git clone <your-repo-url> ICML_simulator
+   cd ICML_simulator
    ```
 
 2. (Recommended) Create and activate a virtual environment:
@@ -49,7 +49,7 @@ The simulator is implemented in pure Python (NumPy / SciPy), with optional depen
 The main entry point for users is the module:
 
 ```python
-from iclr_simulator.simulator.multi_res_generation_with_seg import (
+from ICML_simulator.simulator.multi_res_generation_with_seg import (
     generate_emitters_scenarios,
     generate_and_store_spectrum_multi,
 )
@@ -226,7 +226,7 @@ The function will:
 A typical RF dataset can be created by combining a rich set of modulations and interference types:
 
 ```python
-from iclr_simulator.simulator.multi_res_generation_with_seg import (
+from ICML_simulator.simulator.multi_res_generation_with_seg import (
     generate_emitters_scenarios,
     generate_and_store_spectrum_multi,
 )
@@ -303,7 +303,7 @@ The same simulator can be used to generate theoretically clean FSK codes, each a
 through multiple STFT resolutions:
 
 ```python
-from iclr_simulator.simulator.multi_res_generation_with_seg import (
+from ICML_simulator.simulator.multi_res_generation_with_seg import (
     generate_emitters_scenarios,
     generate_and_store_spectrum_multi,
 )
